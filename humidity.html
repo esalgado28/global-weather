@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Humidity</title>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,6 +14,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+
 </head>
 <body>
     <!-- Navigation Bar Large Screen -->
@@ -41,35 +42,26 @@
 
     <!-- Main body left container -->
     <div class="float-left-area">
-    <div class="inner-left">
+        <div class="inner-left">
+        
+            <h1>Humidity</h1>
+            <hr>
     
-    <div class="container">
-    
-    <h1>Summary: Latitude vs. X</h1>
-    <hr>
-
-    <div class="square">
-        <div>
-            <a href="Resources/assets/images/Fig1.png">
-            <img src="Resources/assets/images/Fig1.png" width="300" length="200" title="lat vs temp">
+            <a href="Resources/assets/images/Fig2.png">
+            <img src="Resources/assets/images/Fig2.png" width="650" length="450" title="humidity vs. latitude">
             </a>
+            
+            <br>
+            <br>
+    
+            <p>
+                Humidity varies widely across all latitudes.  This may reflect the diversity of
+                biomes across the latitudes. While there are plenty of lush, tropical regions at lower 
+                latitudes, there are also plenty of drier regions like parts of southern US, 
+                parts of Mexico, central to northern Africa, the Middle East, and parts of Asia.
+            </p>
+        
         </div>
-
-        <p>
-        The purpose of this project was to analyze how weather changes as you get closer
-        to the equator. To accomplish this analysis, we first pulled data from the 
-        OpenWeatherMap API to assemble a dataset on over 500 cities.
-        </p>
-
-        <p>
-        After assembling the dataset, we used Matplotlib to plot various aspects of the weather
-        vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
-        This site provides the source data and visualizations created as a part of the analysis,
-        as well as explanations and descriptions of any trends and correlations witnessed. 
-        </p>
-    </div>
-    </div>
-    </div>
     </div>
 
     <!-- Main body right container -->
@@ -84,7 +76,7 @@
                 <td><a href="maxTemp.html">
                     <img src="Resources/assets/images/Fig1.png" width="200" length="150" title="Temperature">
                 </a></td>
-                <td><a href="humidity.html">
+                <td class="selected"><a href="humidity.html">
                     <img src="Resources/assets/images/Fig2.png" width="200" length="150" title="Humidity">
                 </a></td>
             </tr>
@@ -93,17 +85,16 @@
                     <img src="Resources/assets/images/Fig3.png" width="200" length="150" title="Cloudiness">
                 </a></td>
                 <td><a href="windSpeed.html">
-                    <img src="Resources/assets/images/Fig4.png" width="200" length="150" title="Wind">
+                    <img src="Resources/assets/images/Fig4.png" width="200" length="150" title="Wind Speed">
                 </a></td>
             </tr>
         </table>
         
         </div>
-        </div>
-        
+    </div>
 
     <div class="clear-floated"></div>
-    
+
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
