@@ -1,0 +1,21 @@
+@media(min-width: 1000px)
+{
+    .bigScreen{
+        visibility: visible;
+    }
+
+    .smallScreen{
+        display: none;
+    }    
+}
+
+@media(max-width: 999px)
+{
+    .bigScreen{
+        display: none;
+    }
+
+    .smallScreen{
+        visibility: visible;
+    }
+}

@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet"
@@ -16,6 +17,7 @@
     crossorigin="anonymous">
 </head>
 <body>
+    <div class="bigScreen">
     <!-- Navigation Bar Large Screen -->
     <ul class="nav nav-pills nav-fill whiteBackground">
         <li class="nav-item">
@@ -40,7 +42,7 @@
     </ul>
 
     <!-- Bootstrap class container -->
-    <div class="container">
+    <div class="container table-responsive">
         <div class="row">
             <div class="col-md-12">
                <h1>Comparison: Latitude vs. X</h1>
@@ -86,7 +88,87 @@
              </div>
         </div>
     </div>
-    
+    </div>
+
+    <!-- Small screen version -->
+    <div class="smallScreen">
+        <nav class="navbar navbar-light whiteBackground">
+            <div class="nav-item">
+              <a class="nav-link" href="index.html"><h3>Latitude</h3></a>
+            </div>
+            <div class="dropdown">
+            <button class="navbar-toggler" type="button" aria-expanded="false" data-toggle="dropdown"
+            id="dropdownMenuButton" aria-haspopup="true" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                <a class="dropdown-item" href="comparison.html">Comparison</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+            </div></div>
+        </nav>
+
+        <h1>Comparison: Latitude vs. X</h1>
+        <hr>
+        <b>Click any plot for a more in-depth analysis.</b>
+        <br>
+        <br>
+        
+        <center class="table-responsive">
+            <table>
+            <tr><td>
+            <h4>vs. Max Temperature</h4>
+            <a href="maxTemp.html">
+                <img src="Resources/assets/images/Fig1.png" 
+                width="550" length="400" title="temperature vs. latitude">
+            </a>
+            </td></tr>
+
+            <tr><td>
+                <br>
+                <hr>    
+            </td></tr>
+            
+            <tr><td>
+            <h4>vs. Humidity</h4>
+            <a href="humidity.html">
+                <img src="Resources/assets/images/Fig2.png" 
+                width="550" length="400" title="humidity vs. latitude">
+            </a>
+            </td></tr>
+            
+            <tr><td>
+                <br>
+                <hr>    
+            </td></tr>
+
+            <tr><td>
+            <h4>vs. Cloudiness</h4>
+            <a href="cloudiness.html">
+                <img src="Resources/assets/images/Fig3.png" 
+                width="550" length="400" title="cloudiness vs. latitude">
+            </a>
+            </td></tr>
+
+            <tr><td>
+                <br>
+                <hr>    
+            </td></tr>
+
+            <tr><td>
+            <h4>vs. Wind Speed</h4>
+            <a href="windSpeed.html">
+                <img src="Resources/assets/images/Fig4.png" 
+                width="550" length="400" title="wind speed vs. latitude">
+            </a>
+            </td></tr>
+            </table>
+        </center>
+
+    </div>
 
  <!-- Bootstrap -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

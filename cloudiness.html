@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet"
@@ -17,6 +18,8 @@
 
 </head>
 <body>
+    <div class="bigScreen">
+
     <!-- Navigation Bar Large Screen -->
     <ul class="nav nav-pills nav-fill whiteBackground">
         <li class="nav-item">
@@ -42,15 +45,17 @@
 
     <!-- Main body left container -->
     <div class="float-left-area">
-        <div class="inner-left">
-        
+        <div class="inner-left table-responsive">
+        <table>
+            <td>
             <h1>Cloudiness</h1>
             <hr>
     
             <a href="Resources/assets/images/Fig3.png">
-            <img src="Resources/assets/images/Fig3.png" width="650" length="450" title="cloudiness vs. latitude">
+            <img src="Resources/assets/images/Fig3.png" width="600" length="410" title="cloudiness vs. latitude">
             </a>
-            
+            </td>
+        </table>    
             <br>
             <br>
     
@@ -61,13 +66,12 @@
                 complex weather phenomena that can easily vary day to day regardless of latitude and 
                 temperature.
             </p>
-        
         </div>
     </div>
 
     <!-- Main body right container -->
     <div class="float-right-area">
-        <div class="inner-right">
+        <div class="inner-right table-responsive">
         
         <h2>Visualizations</h2>
         <hr>
@@ -95,6 +99,89 @@
     </div>
 
     <div class="clear-floated"></div>
+    </div>
+
+    <div class="smallScreen">
+        <!-- Navigation Bar Small Screen -->
+        <nav class="navbar navbar-light whiteBackground">
+            <div class="nav-item">
+              <a class="nav-link" href="index.html"><h3>Latitude</h3></a>
+            </div>
+            <div class="dropdown">
+            <button class="navbar-toggler" type="button" aria-expanded="false" data-toggle="dropdown"
+            id="dropdownMenuButton" aria-haspopup="true" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                <a class="dropdown-item" href="comparison.html">Comparison</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+            </div></div>
+        </nav>
+
+        <!-- main container for small screen -->
+        <div class="niceContainer table-responsive">
+        <h1>Cloudiness</h1>
+        <hr>
+
+        <table>
+            <tr>
+            <td>
+        
+            <a href="Resources/assets/images/Fig3.png">
+            <img src="Resources/assets/images/Fig3.png" width="600" length="410" title="cloudiness vs. latitude">
+            </a>
+            </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+            <td>
+            <p>
+                Wind speed and cloudiness don't seem to correlate much, if at all, by latitude. 
+                This, however, is not too surprising because unlike temperature, there's not much 
+                reason to think there should be a correlation. Wind speed and cloudiness are more 
+                complex weather phenomena that can easily vary day to day regardless of latitude and 
+                temperature.
+            </p>
+            </td>
+            </tr>
+        </table>
+        </div>
+
+        <hr>
+        <!-- bottom container for small screen -->
+        <div class="niceContainer">
+            <h2>Visualizations</h2>
+            <hr>
+        
+            <div class="table-responsive">
+            <table>
+                <tr>
+                    <td><a href="maxTemp.html">
+                        <img src="Resources/assets/images/Fig1.png" width="200" length="150" title="Temperature">
+                    </a></td>
+        
+                    <td><a href="humidity.html">
+                        <img src="Resources/assets/images/Fig2.png" width="200" length="150" title="Humidity">
+                    </a></td>
+                
+                    <td class="selected"><a href="cloudiness.html">
+                        <img src="Resources/assets/images/Fig3.png" width="200" length="150" title="Cloudiness">
+                    </a></td>
+        
+                    <td><a href="windSpeed.html">
+                        <img src="Resources/assets/images/Fig4.png" width="200" length="150" title="Wind">
+                    </a></td>
+                </tr>
+            </table>
+            </div>
+            </div>
+
+    </div>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

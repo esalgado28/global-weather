@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/data_table.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet"
@@ -18,6 +19,7 @@
 
 </head>
 <body>
+    <div class="bigScreen">
     <!-- Navigation Bar Large Screen -->
     <ul class="nav nav-pills nav-fill whiteBackground">
         <li class="nav-item">
@@ -40,7 +42,30 @@
           <a class="nav-link" href="data.html">Data</a>
         </li>
     </ul>
+    </div>
 
+    <div class="smallScreen">
+    <!-- Navigation Bar Small Screen -->
+    <nav class="navbar navbar-light whiteBackground">
+      <div class="nav-item">
+        <a class="nav-link" href="index.html"><h3>Latitude</h3></a>
+      </div>
+      <div class="dropdown">
+      <button class="navbar-toggler" type="button" aria-expanded="false" data-toggle="dropdown"
+      id="dropdownMenuButton" aria-haspopup="true" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+          <a class="dropdown-item" href="comparison.html">Comparison</a>
+          <a class="dropdown-item" href="data.html">Data</a>
+      </div></div>
+  </nav>
+  </div>
+  
     <h1>Data</h1>
     <hr>
     <b>The following table includes all of the data used for plotting during the project.</b>
